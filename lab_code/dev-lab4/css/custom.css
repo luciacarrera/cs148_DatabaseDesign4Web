@@ -1,0 +1,258 @@
+:root{
+    --main-color: black;
+    --main-bg-color: cornsilk;
+}
+html{
+    background-color: #95e495;
+
+}
+body{
+    width: 90%;
+    margin: auto;
+    /*! background-color: rgba(255,255,255,10); */
+}
+figure{
+    /*! float: right; */
+    text-align: center;
+    width: 30%;     /*  1@#%$!@#$%!@#%!@#$%#@$%@#$%@#$%@$#% */
+    margin-left: auto;
+    display: inline-block;
+    margin-right: auto;
+    /*! margin: 0.5em; */
+    padding: 0 1.5% 0 1.5%;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 5%;
+    /*! float: left; */
+}
+
+body{
+
+    /*! background-color: #95e495; */
+    color: darkgreen;
+    max-width: 50em;
+    line-height: 1.3em;
+    padding: 0 1% 0 1%;
+    margin: 0 auto 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    body\{\ width: 90%;
+    margin: auto;
+    /*! background-color: rgba(255, 255, 255, 0.5); */
+}
+
+html{
+    background-color: #e2fee2;
+    height: 100%;
+    margin: 0;
+}
+
+article, section, aside, nav{
+    padding: 1%;
+}
+
+table{
+    clear: both;
+}
+
+form{
+    /*! max-width: 400px; */
+    /*! border: medium solid goldenrod; */
+    background-color: darkgreen;
+    color: #e2fee2;
+    padding: 1%;
+    margin: auto;
+}
+
+.contact label{
+    font-size: xx-small; 
+}
+fieldset{
+    border: none;
+}
+
+fieldset p{
+    margin-bottom: 1em;
+}
+
+legend {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+label + input, label + textarea{
+    display: block;
+}
+
+input[type=text]{
+    border: 0;
+    background-color: white;
+    /*! border-bottom: medium solid grey; */
+    width: 100%;
+    height: 2em;
+    color: darkgreen;
+    font-size: large;
+}
+
+select{
+  font-size: large;
+}
+
+textarea{
+    width: 100%;
+    height: 5em;
+}
+
+.buttons{
+    text-align: center
+}
+
+input[type=submit]{
+    width: 20%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #e2fee2;
+    color: darkgreen;
+    /*! border-color: cornsilk; */
+    border-radius: .25em;
+    display: block;
+}
+
+/* grid setup */
+body{
+    display: grid;
+    grid-template-areas: "nav" "header" "main" "footer";
+    /*! width: fit-content; */
+}
+
+header{
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    /*! max-width: 100%; */
+    border-radius: 1em;
+    background-color: darkgreen;
+    text-align: center;
+    color: #e2fee2;
+    /*! max-height: 20%; */
+    max-height: 1.5em;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0 5% 0 0;
+    color: #e2fee2;
+    text-decoration: none;
+    font-weight: bold;
+    /*! text-align: center; */
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    padding-top: 3%;
+}
+/* TEXT */
+h1{
+    font-size: 3.5em;
+}
+h1, h2, h3, h4, h5, body{
+    
+    padding-left: 1.5%;
+}
+#adminBtn{
+    padding: 0 0 0 0;
+}
+
+.activePage{
+    color: gold;
+}
+
+.btnAdopt{
+
+    float: right;
+    background-color: darkgreen;
+    padding: 2%;
+    border-radius: 1em;
+    color: #e2fee2;
+    text-decoration: none;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    /*! padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* TABLE */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: white;}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkgreen;
+    color: white;
+  }

@@ -1,0 +1,74 @@
+/* CSS designed by  Robert Erickson */
+
+article h1 em strong{
+    color: red;
+    font-weight: bolder;
+}
+article h1 strong em{
+    color: red;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+nav{
+    background-color: blue;
+}
+nav ol{
+    padding: 0;
+}
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ol li a:link, nav ol li a:visited{
+    color: white;
+}
+nav ol li a{
+    display: inline-block;
+    padding: 1em;
+    width: 7em;
+}
+nav ol li a:hover{
+    background-color: lightsteelblue;
+    color: darkblue;
+}
+.activePage{
+    background-color: lightblue;
+}
+.album li:nth-child(4) a {
+    color: orange;
+    font-size: 2em;
+}
+h2#ss + .album li:nth-child(4) {
+    color: cadetblue;
+    font-size: 2em;
+}
+article ol li:last-child {
+    background-color: darkgreen;
+    color: lightgreen;
+}
+article ol li:last-child a{
+    color: inherit;
+}
+footer a[target="_blank"] {
+    background-color: cyan;
+    border-radius: 0.5em;
+    border-left: 0.5em solid cyan;
+    border-right: 0.5em solid cyan;
+}
+article {
+    float: left;
+    margin: 0 2%;
+    width: 73%;
+}
+aside {
+    float: left;
+    margin: 0 2%;
+    width: 19%;
+}
+footer{
+    clear: both;
+}
+h1{
+    color: red;
+    float: right;
+}

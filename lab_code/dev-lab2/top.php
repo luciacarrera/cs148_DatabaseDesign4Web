@@ -26,7 +26,7 @@ include 'lib/constants.php';
 print '<!-- make Database connections -->';
 require_once(LIB_PATH . '/Database.php');
 
-$thisDatabaseReader = new DataBase('lcarrera_reader', 'r', DATABASE_NAME);
+$thisDatabaseReader = new DataBase('lcarrera_reader', 'r', 'LCARRERA_cs148_lab2');
 print '</head>';
 print '<body id="' . PATH_PARTS
 ['filename'] . '">';

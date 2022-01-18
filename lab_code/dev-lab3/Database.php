@@ -4,7 +4,7 @@ class DataBase{
     public $pdo = '';
     
     // for debugging purposes
-    const DB_DEBUG = false;
+    const DB_DEBUG = true;
 
     public function __construct($dataBaseUser, $whichDataBasePassword, $dataBaseName) {
         $this->pdo = null;
@@ -18,7 +18,7 @@ class DataBase{
                 $DataBasePassword = $dbReader;
                 break;
             case 'w':
-                $DataBasePassword = $dbReader;
+                $DataBasePassword = $dbWriter;
                 break;
         }
 

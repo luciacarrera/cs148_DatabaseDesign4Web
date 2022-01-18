@@ -14,9 +14,10 @@ function getData($field){
 
 // variable to hold id value passed in (initialization) + sanitization
 $critterId = (isset($_GET['cid'])) ? (int) htmlspecialchars($_GET['cid']) : 0;
-if(isset($_POST['hidCritterId'])){
-    $critterId = (int) htmlspecialchars($_POST['hidCritterId']);
+if(isset($_POST['hidWildlifeId'])){
+    $critterId = (int) htmlspecialchars($_POST['hidWildlifeId']);
 }
+
 
 // select id and commonname from db
 $sql = 'SELECT pmkWildlifeId, fldCommonName ';
@@ -41,11 +42,9 @@ $agreeToPromo = '1';
 $saveData = true;
 ?>
 <main>
-    <!--display common name in heading-->
-    <h2>Adopt a 
-        <?php print $critterCommonName; ?>
-    </h2>
+    
     <?php
+    
 if(isset($_POST['btnSubmit'])) {
     if(DEBUG){
         print '<p>POST array: </p><pre>';
@@ -62,7 +61,16 @@ if(isset($_POST['btnSubmit'])) {
     $agreeToPromo = (int) getData('chkAgreeToPromotional');
     $critterId = (int) getData('hidWildlifeId');
 
-
+    
+    $sql = 'SELECT pmkWildlifeId, fldCommonName ';
+    $sql .= 'FROM tblWildlife ';
+    $sql .= 'WHERE pmkWildlifeId = ? ';
+    
+    $data = array($critterId);
+    $animalToAdopt = $thisDatabaseReader->select($sql, $data);
+    
+    // sanitization if record does not exist
+    $critterCommonName = $animalToAdopt[0]['fldCommonName'];
 
     // STEP E: validation of variables
     if($donationAmount <= 25 or $donationAmount >= 1000){
@@ -125,9 +133,15 @@ if(isset($_POST['btnSubmit'])) {
         if (DEBUG) {
             print $thisDatabaseReader->displayQuery($sql2, $data2);
         }
+        echo '<p>You have succesfully adopted a critter!</p>';
     }
 }
 ?>
+    <!--display common name in heading-->
+    <h2>Adopt a 
+        <?php print $critterCommonName; ?>
+    </h2>
+
     <!--form-->
     <p id="submitOutput" ></p>
     <!--STEP B: Add form element & C-->

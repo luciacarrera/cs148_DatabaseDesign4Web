@@ -2,7 +2,6 @@
 
 // define constant flag debug
 define('DEBUG', false);
-define('DATABASE_NAME','LCARRERA_cs148_lab3');
 
 // sanitizing tge server
 $_SERVER = filter_input_array

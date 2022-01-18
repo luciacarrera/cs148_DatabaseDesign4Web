@@ -1,0 +1,133 @@
+:root{
+    --main-color: black;
+    --main-bg-color: cornsilk;
+}
+
+figure{
+    float: left;
+    text-align: center;
+    width: 30%;     /*  1@#%$!@#$%!@#%!@#$%#@$%@#$%@#$%@$#% */
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    border: thin solid var(--main-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    max-width: 50em;
+    line-height: 1.3em;
+    padding: 1%;
+    margin: auto;
+}
+
+html{
+    background-color: white;
+}
+
+nav{
+    background-color: var(--main-bg-color);
+    text-align: center;
+}
+
+article, section, aside, nav{
+    padding: 1%;
+}
+
+table{
+    clear: both;
+}
+
+form{
+    max-width: 400px;
+    border: medium solid goldenrod;
+    background-color: black;
+    color: goldenrod;
+    padding: 1%;
+    margin: auto;
+}
+
+.contact label{
+    font-size: xx-small; 
+}
+fieldset{
+    border: none;
+}
+
+fieldset p{
+    margin-bottom: 1em;
+}
+
+legend {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+label + input, label + textarea{
+    display: block;
+}
+
+input[type=text]{
+    border: 0;
+    background-color: black;
+    border-bottom: medium solid goldenrod;
+    width: 100%;
+    height: 2em;
+    color: goldenrod;
+    font-size: large;
+}
+
+select{
+  font-size: large;
+}
+
+textarea{
+    width: 100%;
+    height: 5em;
+}
+
+.buttons{
+    text-align: center
+}
+
+input[type=submit]{
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    background-color: goldenrod;
+    color: cornsilk;
+    border-color: cornsilk;
+    border-radius: .25em
+}
+
+/* grid setup */
+body{
+    display: grid;
+    grid-template-areas: "nav" "header" "main" "footer";
+}
+
+header{
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+}
+
+nav a{
+    display: inline-block;
+    padding: 0 1em;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
