@@ -1,0 +1,27 @@
+1. In this class I expect to learn how to make a functional website with an extensive database connected to it. Using such data to create a highly efficient website that can be interactive and resolve queries for the user.
+
+2. I am going to assume hours of help means office hours, so technically there is 1 hour on Monday with Anika and Friday's class which lasts 50 minutes. In conclusion, I believe the answer is 1 hour and 50 minutes, not including the help provided monday through friday in the discussion boards.
+
+3. In this course we are going to learn php (at least I am because I have never programmed in it) and SQL.
+
+4. Introduction to Databases with SQL & Web Programming in zybooks under CS148: Database Design for Web
+
+5. Visual Studio Code
+
+6. Yes, that IDE is just a suggestion
+
+7. FALSE
+
+8. 30 points
+
+9. B
+
+10. August 10 (I am considering that Labor Day does not exclude the week of 09/06 as being a full week, if not it would be August 17)
+
+11. Robert (Bob) Erickson
+
+12. Ask the teacher/TA during office hours or ask a question in the blackboard discussion boards.
+
+13. If the grader has made a mistake, then yes. As long as the petition for review has been asked for within two weeks of posting the lab grades and more than one week before finals
+
+14. 10% off for one assignment, other late assignments will not be accepted and another 10% will be deducted if you do not notify the instructor when you will submit the assignment (before the normal assignment deadline is due)

@@ -1,0 +1,35 @@
+
+## EX1: Display first Name, Last name and Common name (without duplications)
+SELECT fldFirstName, fldLastName, fldCommonName 
+FROM tblAdopter 
+JOIN tblAdopterWildlife ON pmkAdopterEmail = fpkAdopterEmail 
+JOIN tblWildlife ON pmkWildlifeId =fpkWildLifeId
+
+# EX2: Common Name and donation amount sorted by last name.
+SELECT fldFirstName, fldLastName, fldCommonName, fldDonationAmount 
+FROM tblAdopter 
+JOIN tblAdopterWildlife ON pmkAdopterEmail = fpkAdopterEmail 
+JOIN tblWildlife ON pmkWildlifeId =fpkWildLifeId
+ORDER BY fldLastName
+
+
+# EX3: Create a query to list Common Name and the highest amount donated for this animal sorted by amount.
+SELECT fldCommonName, MAX(fldDonationAmount ) as maxDonated
+FROM tblWildlife
+JOIN tblAdopterWildlife ON pmkWildlifeId = fpkWildlifeId
+GROUP BY pmkWildlifeId 
+ORDER BY  MAX(fldDonationAmount ) DESC
+
+# EX4: Create a query to list First Name, 
+Last Name, Common Name, Donation Amount for donations of $1000  sorted by first name.
+SELECT fldFirstName, fldLastName, fldCommonName, fldDonationAmount
+FROM tblAdopter 
+JOIN tblAdopterWildlife ON pmkAdopterEmail = fpkAdopterEmail 
+JOIN tblWildlife ON pmkWildlifeId =fpkWildLifeId
+WHERE fldDonationAmount=1000
+ORDER BY fldFirstName
+
+# EX5: Create a query to list First Name, Last Name, total donation by this person sorted by the total donation amount with the highest amount first.
+
+
+# EX6: Create a query to list First Name, Last Name, total donation by this person sorted by the total donation amount with the highest amount first.
